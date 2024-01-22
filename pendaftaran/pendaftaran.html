@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pendaftaran conseling online</title>
+    <link rel="stylesheet" href="pendaftaranform.css">
+</head>
+<body>
+    <div class="container">
+     <header>
+        <h1>Pendaftaran</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <form id="pendaftaranform">
+        <label for="fullName">Nama Lengkap:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="fullName" required>
+
+        <label for="phoneNumber">Nomor Telepon:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="address">Alamat:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="age">Usia:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Jenis Kelamin</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Laki-Laki</option>
+            <option value="perempuan">Perempuan</option>
+            <option value="other">Lainnya</option>
+        </select>
+
+        <label for="conselingType">Jenis Konseling:</label>
+        <select id="conselingType" name="conselingType" required>
+            <option value="individual">Individual</option>
+            <option value="Couple">Pasangan</option>
+            <option value="family">Keluarga</option>
+            <option value="friend">Teman</option>
+        </select>
+
+        <label for="preferensiOnline">Preferensi online</label>
+        <select id="preferensiOnline" name="preferensiOnline" required>
+            <option value="online">online</option>
+            <option value="offline">Offline</option>
+        </select>
+
+        <label for="counselingDay">Preferensi Hari Konseling:</label>
+        <input type="text" id="counselingDay" name="counselingDay">
+         
+      <select class="form-select" aria-label="Default select example">
+            <option selected>Pilih Psikolog</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+      </select>
+
+        <label for="conselingTime">Preferensi Waktu Konseling:</label>
+        <input type="text" id="conselingTime" name="conselingTime">
+
+        <label for="mentalHealthIssue">Masalah Kesehatan Mental</label>
+        <textarea id="mentalHealthIssue" name="mentalHealthIssue" rows="4"></textarea>
+
+        <label for="paymentMethod">Metedo Pembayaran:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="creditCard">Kartu Kredit</option>
+            <option value="debitCrad">Kartu Debit</option>
+            <option value="paypal">paypal</option>
+        </select>
+
+
+        <button type="button" onclick="submitform()">Daftar</button>
+
+    </form>
+    </div>
+    <script src="pendaftaran.js"></script>
+   
+</body>
+</html>
